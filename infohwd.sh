@@ -38,7 +38,7 @@ function informetotal # function to make a full report of the computer's hardwar
         free -m
         dmidecode
         hdparm -i /dev/sda
-        ./infohwd.sh
+        bash infohwd.sh
     
     }
 
@@ -53,7 +53,7 @@ function cpu1 # function to make a report over the cpu use and stats
         echo
         echo
         echo
-        ./infohwd.sh
+        bash infohwd.sh
     
     }
 
@@ -70,7 +70,7 @@ function hard1 # function to make a report over the HDD use and stats
         hwinfo -short
         echo
         echo
-        ./infohwd.sh
+        bash infohwd.sh
 
     }
 
@@ -85,7 +85,7 @@ function pci # function to make a report over the PCI uses and stats
         echo
         echo
         echo
-        ./infohwd.sh
+        bash infohwd.sh
 
     }
 
@@ -106,7 +106,7 @@ function diskos # function to make a report over the HDD but about the space and
         echo
         echo
         echo
-        ./infohwd.sh
+        bash infohwd.sh
 
     }
 
@@ -121,7 +121,7 @@ function usbint1 # function to make a report over the USB use and stats
         lsusb -v
         echo
         echo
-        ./infohwd.sh
+        bash infohwd.sh
 
     }
 
@@ -138,7 +138,7 @@ function infomobobios # function to make a report about the status of the BIOS a
         echo
         echo
         echo
-        ./infohwd.sh
+        bash infohwd.sh
 
     }
 
@@ -201,6 +201,6 @@ case $opcion in
     ;;
     *)
         echo 'Desconozco esa opcion'
-        ./infohwd.sh
+        bash infohwd.sh
     ;;
 esac
